@@ -18,7 +18,7 @@ export const customStyles = {
 		bottom: 'auto',
 		marginRight: '10px',
 		padding: '40px',
-		backgroundColor: '#fff',
+		backgroundColor: '#333',
 		boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)',
 		borderRadius: '8px',
 		display: 'flex',
