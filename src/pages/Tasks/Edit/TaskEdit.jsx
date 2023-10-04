@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import TaskForm from '../../../components/TaskForm/TaskForm';
+import { Container, FormContainer, Title } from './styles';
 
 const TaskEdit = () => {
 	const [id, setId] = useState(0);
 
-	
 	useEffect(() => {
 		const pathArray = window.location.pathname.split('/');
 		const id = pathArray[pathArray.length - 1];
@@ -12,10 +12,11 @@ const TaskEdit = () => {
 	}, []);
 
 	return (
-		<div>
-			<h1>Editar Tarefa Existente</h1>
+		<Container>
+			<Title>Editar Tarefa Existente</Title>
+
 			<TaskForm id={id} />
-		</div>
+		</Container>
 	);
 };
 

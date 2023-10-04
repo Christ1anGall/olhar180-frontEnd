@@ -1,15 +1,15 @@
 import styled from 'styled-components';
 
-export const TaskCreateContainer = styled.div`
+export const Container = styled.div`
 	background-color: #1f1f1f;
 	color: #fff;
 	padding: 40px 80px;
 
+	max-width: 100%;
+	height: 100vh;
+	margin: 0 auto;
 	justify-content: center;
 	align-items: center;
-	height: 100vh;
-	max-width: 100%;
-	margin: 0 auto;
 
 	@media (max-width: 480px) {
 		padding: 10px;
