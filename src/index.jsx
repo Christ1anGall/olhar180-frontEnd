@@ -11,7 +11,10 @@ import { ToastContainer } from 'react-toastify';
 ReactDOM.createRoot(document.getElementById('root')).render(
 	<>
 		<GlobalStyle />
-		<ToastContainer />
+		<ToastContainer
+			autoClose={5000}
+			style={{ width: '100%', maxWidth: '300px' }}
+		/>
 		<App />
 	</>
 );

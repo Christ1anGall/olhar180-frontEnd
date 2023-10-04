@@ -7,7 +7,14 @@ export const NavbarContainer = styled.nav`
 	display: flex;
 	justify-content: space-around;
 	height: 80px;
+
 	align-items: center;
+
+	@media (max-width: 768px) {
+		flex-direction: column;
+		justify-content: space-between;
+		height: 150px;
+	}
 `;
 
 export const customStyles = {
@@ -32,12 +39,21 @@ export const TitleNav = styled.h1`
 	min-width: 200px;
 	color: #fff;
 	display: flex;
+	@media (max-width: 768px) {
+		text-align: center;
+		align-items: center;
+		justify-content: center;
+	}
 `;
 
 export const NavBarDiv = styled.div`
 	display: flex;
 	flex-direction: row-reverse;
 	width: 100%;
+
+	@media (max-width: 768px) {
+		flex-direction: column;
+	}
 `;
 
 export const NavBarButton = styled.button`
