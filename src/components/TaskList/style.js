@@ -102,7 +102,18 @@ export const TaskFooter = styled.div`
 export const TaskPriority = styled.p`
 	font-size: 14px;
 	margin: 0;
-	color: #f44336;
+	color: ${(props) => {
+		switch (props.priority) {
+			case 'baixa':
+				return '#4caf50';
+			case 'media':
+				return '#ffeb3b';
+			case 'alta':
+				return '#f44336';
+			default:
+				return '#ccc';
+		}
+	}};
 `;
 
 export const CheckboxContainer = styled.label`
