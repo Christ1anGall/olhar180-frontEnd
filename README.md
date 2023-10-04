@@ -7,20 +7,23 @@
 - Permitir que o usuário visualize detalhes de cada tarefa.
 - Permitir que o usuário marque tarefas como concluídas.
 - Incluir um botão "Adicionar Tarefa" que redireciona para a página de criação de tarefas.
+- realização de cadastro e login.
 
 ### Página de Criação de Tarefas:
 - Permitir ao usuário adicionar uma nova tarefa à lista.
 - Incluir um formulário com campos para título da tarefa, descrição, data de conclusão e prioridade (alta, média, baixa).
 - Validar os campos do formulário antes de criar a tarefa.
 
-### Página de Edição de Tarefas:
+### Página de Edição de Tarefas (Requer Login):
 - Permitir ao usuário editar uma tarefa existente.
 - Incluir um formulário com os mesmos campos da página de criação de tarefas.
 - Validar os campos do formulário antes de atualizar a tarefa.
+- **Nota: Esta página só é acessível para usuários logados.**
 
-### Página de Exclusão de Tarefas:
+### Página de Exclusão de Tarefas (Requer Login):
 - Permitir ao usuário excluir uma tarefa existente da lista.
 - Solicitar confirmação antes de excluir a tarefa.
+- **Nota: Esta página só é acessível para usuários logados.**
 
 ### API RESTful:
 - endpoints para todas as operações CRUD (Create, Read, Update, Delete) nas tarefas.
