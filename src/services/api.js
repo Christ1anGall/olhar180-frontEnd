@@ -88,8 +88,9 @@ export const updateTask = async (task) => {
 		});
 		toast.success('Task Atualizada!!');
 		return response.data;
-	} catch (error) {
-		throw error;
+	} catch ({ response }) {
+		toast.error(`Error: ${response.data.message}, try to log in `);
+		throw response;
 	}
 };
 
