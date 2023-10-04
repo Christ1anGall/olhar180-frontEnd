@@ -7,8 +7,7 @@ export const TaskItem = styled.li`
 	background-color: #1f1f1f;
 	color: #fff;
 	border-radius: 10px;
-	max-width: 300px;
-	max-height: 100px;
+
 	cursor: pointer;
 	flex-grow: 1;
 
@@ -37,7 +36,6 @@ export const TaskListWrapper = styled.ul`
 	align-items: center;
 	flex-direction: column;
 	gap: 10px;
-
 	margin-top: 20px;
 
 	@media (min-width: 768px) {
@@ -46,7 +44,7 @@ export const TaskListWrapper = styled.ul`
 `;
 
 export const TaskItemWrapper = styled.li`
-	flex: 0 1 calc(33.33% - 20px);
+	flex: 0 1 calc(45.5% - 40px);
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -56,16 +54,16 @@ export const TaskItemWrapper = styled.li`
 	padding: 15px;
 	background-color: #1f1f1f;
 	border-radius: 10px;
-	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-	transition: background-color 0.3s ease-in-out;
-	border: 0.1px dotted red;
+	box-shadow: 1px 4px 10px rgba(0, 0, 0, 4);
+	transition: background-color 0.5s ease-in-out;
+
 	flex-grow: 1;
+
+	min-height: 120px;
 
 	&:hover {
 		background-color: #333;
-	}
-
-	@media (min-width: 768px) {
+		box-shadow: 1px 4px 20px rgba(0, 0, 0, 4);
 	}
 `;
 
