@@ -1,7 +1,7 @@
 import React from 'react';
 import {
 	TaskInfo,
-	divDeleteTask,
+	divDelTask,
 	TaskEstimated,
 	TaskItemWrapper,
 	TaskListWrapper,
@@ -46,9 +46,7 @@ const TaskList = ({ tasks, onTaskClick, onTaskDone, onTaskDelete }) => {
 						<TaskPriority priority={task.priority}>
 							{task.priority}
 						</TaskPriority>
-						<divDeleteTask onClick={() => onTaskDelete(task)}>
-							delete
-						</divDeleteTask>
+						<divDelTask onClick={() => onTaskDelete(task)}>delete</divDelTask>
 					</TaskFooter>
 				</TaskItemWrapper>
 			))}

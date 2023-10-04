@@ -97,6 +97,8 @@ export const TaskFooter = styled.div`
 	display: flex;
 	flex-direction: column;
 	align-items: flex-end;
+	justify-content: space-between;
+	height: 80px;
 `;
 
 export const TaskPriority = styled.p`
@@ -154,10 +156,10 @@ export const CustomCheckbox = styled.span`
 	}
 `;
 
-export const divDeleteTask = styled.div`
+export const divDelTask = styled.div`
 	cursor: pointer;
-	color: #f44336;
-	font-size: 18px;
+	color: white;
+	font-size: 14px;
 	transition: color 0.2s;
 
 	&:hover {
