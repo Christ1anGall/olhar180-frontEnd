@@ -114,7 +114,8 @@ export const deleteTask = async (taskId) => {
 	try {
 		await api.delete(`${API_BASE_URL}/${taskId}`);
 		toast.success('Task Apagada!!');
-	} catch (error) {
-		throw error;
+	} catch ({ response }) {
+		toast.error(`Error: ${response.data.message}, try to log in `);
+		throw response;
 	}
 };
