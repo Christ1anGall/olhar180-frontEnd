@@ -1,31 +1,43 @@
-# Create React App
+# Aplicação de Gerenciamento de Tarefas
 
-This directory is a brief example of a [Create React App](https://github.com/facebook/create-react-app) site that can be deployed to Vercel with zero configuration.
+## Requisitos Funcionais:
 
-## Deploy Your Own
+### Página Inicial:
+- Exibir uma lista de todas as tarefas existentes.
+- Permitir que o usuário visualize detalhes de cada tarefa.
+- Permitir que o usuário marque tarefas como concluídas.
+- Incluir um botão "Adicionar Tarefa" que redireciona para a página de criação de tarefas.
 
-Deploy your own Create React App project with Vercel.
+### Página de Criação de Tarefas:
+- Permitir ao usuário adicionar uma nova tarefa à lista.
+- Incluir um formulário com campos para título da tarefa, descrição, data de conclusão e prioridade (alta, média, baixa).
+- Validar os campos do formulário antes de criar a tarefa.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/vercel/tree/main/examples/create-react-app&template=create-react-app)
+### Página de Edição de Tarefas:
+- Permitir ao usuário editar uma tarefa existente.
+- Incluir um formulário com os mesmos campos da página de criação de tarefas.
+- Validar os campos do formulário antes de atualizar a tarefa.
 
-_Live Example: https://create-react-template.vercel.app/_
+### Página de Exclusão de Tarefas:
+- Permitir ao usuário excluir uma tarefa existente da lista.
+- Solicitar confirmação antes de excluir a tarefa.
 
-## Available Scripts
+### API RESTful:
+- endpoints para todas as operações CRUD (Create, Read, Update, Delete) nas tarefas.
+- criação, leitura, atualização e exclusão de tarefas por meio da API.
 
-In the project directory, you can run:
+### Tecnologias Utilizadas:
+- React para construir a interface do usuário.
+- Styled-Components para a estilização da interface.
+- NestJS para desenvolver o backend da aplicação.
+- PostgreSQL como banco de dados.
+- TypeORM para armazenar e gerenciar os dados da aplicação.
 
-### `npm start`
+### Acessibilidade:
+- Garantir que a aplicação seja acessível a todos os usuários, incluindo aqueles com necessidades especiais.
 
-Runs the app in the development mode. Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes. You may also see any lint errors in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode. See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.
-
-It correctly bundles React in production mode and optimizes the build for the best performance. The build is minified and the filenames include the hashes.
